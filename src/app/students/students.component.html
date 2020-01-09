@@ -1,16 +1,27 @@
 <div class="container">
 	<div class="row">
-		<div class="col-6 m-auto">
+		<div class="col-4">
       <h5 class="text-info">Student Details are:-</h5>
         <div class="list-group">
           <a
-            [routerLink]="['/servers', server.id]"
-            [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
-            fragment="loading"
+            [routerLink]="['/students', student.id]"
             href="#"
             class="list-group-item"
-            *ngFor="let server of servers">
-            {{ server.name }}
+            *ngFor="let student of students">
+            {{ student.name }}
+          </a>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <h5 class="text-info">Student Details are:-</h5>
+        <div class="list-group">
+          <a
+            [routerLink]="['/students', student.id]"
+            href="#"
+            class="list-group-item"
+            *ngFor="let student of students">
+            {{ student.name }}
           </a>
       </div>
     </div>
