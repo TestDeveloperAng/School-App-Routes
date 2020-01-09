@@ -19,7 +19,7 @@ const appRoutes = [
 ]
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, HelloComponent, TeachersComponent, HomeComponent, StudentsComponent, ClassroomsComponent ],
   bootstrap:    [ AppComponent ]
 })
