@@ -11,6 +11,7 @@ import { ClassroomsComponent } from './classrooms/classrooms.component';
 
 import { Routes,RouterModule } from '@angular/router';
 import { StudentComponent } from './students/student/student.component';
+import { StudentsService } from './shared/students.service';
 
 const appRoutes = [
   {path : '', component : HomeComponent},
@@ -24,6 +25,7 @@ const appRoutes = [
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, HelloComponent, TeachersComponent, HomeComponent, StudentsComponent, ClassroomsComponent, StudentComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [StudentsService]
 })
 export class AppModule { }
