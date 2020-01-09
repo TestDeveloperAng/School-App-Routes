@@ -2,7 +2,17 @@
 	<div class="row">
 		<div class="col-6 m-auto">
       <h5 class="text-info">Student Details are:-</h5>
-      <app-student *ngFor="let student of students" [student]="student"></app-student>
+        <div class="list-group">
+          <a
+            [routerLink]="['/servers', server.id]"
+            [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+            fragment="loading"
+            href="#"
+            class="list-group-item"
+            *ngFor="let server of servers">
+            {{ server.name }}
+          </a>
+      </div>
     </div>
 	</div>
 </div>
