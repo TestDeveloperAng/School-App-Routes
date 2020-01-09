@@ -15,6 +15,7 @@ import { StudentComponent } from './students/student/student.component';
 const appRoutes = [
   {path : '', component : HomeComponent},
   {path : 'students', component : StudentsComponent},
+  {path : 'students/:id', component : StudentComponent},
   {path : 'classrooms', component : ClassroomsComponent},
   {path : 'teachers', component : TeachersComponent},
 ]
