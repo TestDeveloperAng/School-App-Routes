@@ -10,6 +10,7 @@ import { StudentsComponent } from './students/students.component';
 import { ClassroomsComponent } from './classrooms/classrooms.component';
 
 import { Routes,RouterModule } from '@angular/router';
+import { StudentComponent } from './students/student/student.component';
 
 const appRoutes = [
   {path : '', component : HomeComponent},
@@ -20,7 +21,7 @@ const appRoutes = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent, TeachersComponent, HomeComponent, StudentsComponent, ClassroomsComponent ],
+  declarations: [ AppComponent, HelloComponent, TeachersComponent, HomeComponent, StudentsComponent, ClassroomsComponent, StudentComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

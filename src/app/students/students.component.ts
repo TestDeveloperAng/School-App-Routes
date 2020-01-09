@@ -12,4 +12,27 @@ export class StudentsComponent implements OnInit {
   ngOnInit() {
   }
 
+  students = [
+    {
+      id : 1,
+      name : 'ABC',
+      class : 7
+    },
+    {
+      id : 2,
+      name : 'DEF',
+      class : 8
+    },
+    {
+      id : 3,
+      name : 'GHI',
+      class : 9
+    },
+    {
+      id : 4,
+      name : 'JKL',
+      class : 10
+    }
+  ]
+
 }
